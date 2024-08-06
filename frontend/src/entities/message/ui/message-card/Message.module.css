@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* min-width: auto; */
+  max-width: 50rem;
+
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-radius: var(--block-border-radius-md);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.my {
+  border-radius: var(--block-border-radius-md) var(--block-border-radius-md) 0
+    var(--block-border-radius-md);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-self: end;
+  position: relative;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.my::after {
+  content: '';
+  right: -0.9rem;
+  bottom: 0rem;
+  width: 0rem;
+  height: 0rem;
+  position: absolute;
+  border-bottom: 1rem solid var(--primary-color);
+  border-right: 1rem solid transparent;
+}
+
+.other {
+  border-radius: var(--block-border-radius-md) var(--block-border-radius-md)
+    var(--block-border-radius-md) 0;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  position: relative;
+  align-self: start;
+
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.other::after {
+  content: '';
+  left: -0.9rem;
+  bottom: 0rem;
+  width: 0rem;
+  height: 0rem;
+  position: absolute;
+  border-bottom: 1rem solid var(--secondary-color);
+  border-left: 1rem solid transparent;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* .container {
+    width: 90%; */
+  /* } */
+}

@@ -1,0 +1,21 @@
+.form {
+  border-top: 0.1rem solid var(--gray-color);
+}
+
+.btn {
+  font-size: var(--font-size-h5);
+  cursor: pointer;
+}
+
+.input_container {
+  border: none;
+  border-radius: 0;
+}
+
+.input {
+  padding: 0 var(--inner-text-spacing) 0 0;
+}
+
+.input_container:focus-within {
+  border: none;
+}

@@ -1,0 +1,4 @@
+.search {
+  margin-top: var(--inner-text-spacing);
+  padding: 0 var(--inner-text-spacing) 0 var(--inner-text-spacing);
+}

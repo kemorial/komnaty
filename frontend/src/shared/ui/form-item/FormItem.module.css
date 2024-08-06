@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-content);
+  font-weight: var(--font-medium);
+
+  gap: 1rem;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  font-family: inherit;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: chatapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '4173:4173'
+    command: bash -c "npm run build && npm run preview"

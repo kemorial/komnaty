@@ -1,0 +1,21 @@
+.lg {
+  min-height: var(--block-height-lg);
+}
+
+.md {
+  min-height: var(--block-height-md);
+}
+
+.sm {
+  min-height: var(--block-height-sm);
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.secondary {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}

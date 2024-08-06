@@ -1,0 +1,26 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40rem;
+  height: 100dvh;
+  background-color: var(--primary-color);
+  transition: transform 0.3s;
+  transition: display 3s;
+  transition-timing-function: cubic-bezier(0.34, 1.09, 0.99, 0.99);
+  z-index: 100;
+}
+
+.hide {
+  transform: translateX(100%);
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .sidebar {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+  }
+}

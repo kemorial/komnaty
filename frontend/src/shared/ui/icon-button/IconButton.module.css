@@ -1,0 +1,40 @@
+.icon-container > * {
+  display: block;
+  cursor: pointer;
+  /* color: var(--secondary-color); */
+}
+
+.icon-container {
+  background-color: inherit;
+  border: none;
+}
+
+.icon-container:hover::before {
+  /* transform: scale(1.3); */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.lg {
+  font-size: var(--icon-lg);
+}
+
+.md {
+  font-size: var(--icon-md);
+}
+
+.sm {
+  font-size: var(--icon-sm);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.error {
+  color: var(--error-color);
+}

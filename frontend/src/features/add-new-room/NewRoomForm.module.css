@@ -1,0 +1,20 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--inner-text-spacing) 0 var(--inner-text-spacing);
+}
+
+.header {
+  font-weight: var(--font-black);
+  font-size: var(--font-size-h4);
+}
+
+.form {
+  padding: var(--inner-text-spacing) var(--inner-text-spacing) 0 var(--inner-text-spacing);
+}
+
+.error {
+  color: white;
+}

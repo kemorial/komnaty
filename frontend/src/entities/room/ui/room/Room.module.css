@@ -1,0 +1,63 @@
+.room {
+  display: flex;
+  gap: 2rem;
+  padding: 0 var(--inner-text-spacing) 0 var(--inner-text-spacing);
+  min-height: var(--block-height-lg);
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.active {
+  background-color: var(--link-color);
+}
+
+.room:hover {
+  background-color: var(--link-color);
+  cursor: pointer;
+}
+
+.room_img {
+  background-color: var(--secondary-color);
+  min-width: 5rem;
+  min-height: 5rem;
+  border-radius: 50%;
+  font-size: var(--font-size-h5);
+  color: var(--primary-color);
+  text-align: center;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  vertical-align: middle;
+}
+
+.room_img > div {
+  display: block;
+  height: auto;
+}
+
+.room_descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.room_title {
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-semiblack);
+}
+
+.room_lastmessage {
+  font-size: var(--font-size-content);
+  font-weight: var(--font-light);
+}
+
+.room_lastmessage_time {
+  font-size: var(--font-size-content);
+  font-weight: var(--font-light);
+  align-self: center;
+}

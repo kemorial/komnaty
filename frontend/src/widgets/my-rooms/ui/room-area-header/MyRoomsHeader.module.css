@@ -1,0 +1,35 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--inner-text-spacing) 0 var(--inner-text-spacing);
+  font-size: var(--font-size-h5);
+
+  min-height: var(--block-height-md);
+}
+
+.header {
+  font-weight: var(--font-black);
+}
+
+.heading_container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.btns {
+  display: flex;
+  gap: var(--inner-text-spacing);
+}
+
+@media only screen and (max-width: 768px) {
+  .hide {
+    display: block;
+  }
+}

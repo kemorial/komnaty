@@ -1,0 +1,143 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  background: rgb(34, 122, 254);
+  background: linear-gradient(
+    160deg,
+    rgba(34, 122, 254, 0.8407738095238095) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* background: linear-gradient(143deg, #227afe, #ffffff); */
+  background-size: 150% 150%;
+
+  -webkit-animation: gradient 18s ease infinite;
+  -moz-animation: gradient 18s ease infinite;
+  -o-animation: gradient 18s ease infinite;
+  animation: gradient 18s ease infinite;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --outer-block-spacing: 6.4rem;
+  --inner-block-spacing: 2.4rem;
+  --inner-text-spacing: 1.2rem;
+
+  --block-border-radius-lg: 1.2rem;
+  --block-border-radius-md: 1rem;
+  --block-border-radius-sm: 0.8rem;
+
+  --block-height-lg: 6.4rem;
+  --block-height-md: 4.2rem;
+  --block-height-sm: 3rem;
+
+  --icon-lg: 3.2rem;
+  --icon-md: 2.4rem;
+  --icon-sm: 1.8rem;
+
+  --font-size-h2: 4.4rem;
+  --font-size-h4: 3.2rem;
+  --font-size-h5: 2.4rem;
+  --font-size-subtitle: 1.8rem;
+  --font-size-content: 1.6rem;
+
+  --font-light: 200;
+  --font-medium: 400;
+  --font-semiblack: 600;
+  --font-black: 800;
+
+  --primary-color: #227afe;
+  --secondary-color: #ffffff;
+  --link-color: #4f91fe;
+  --gray-color: #d1d3d6;
+  --disabled-bg-color: #e9e9e9;
+
+  --error-color: rgb(252, 76, 76);
+  --success-color: rgb(44, 221, 0);
+}
+
+h4 {
+  font-size: 3.2rem;
+  font-weight: var(--font-medium);
+}
+
+h5 {
+  font-size: 2.4rem;
+  font-weight: var(--font-medium);
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.link:visited {
+  color: var(--link-color);
+  outline: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html,
+#root {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+@-o-keyframes gradient {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}

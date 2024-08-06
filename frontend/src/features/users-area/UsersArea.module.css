@@ -1,0 +1,23 @@
+.rooms_container {
+  margin-top: var(--inner-block-spacing);
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Firefox */
+.rooms_container {
+  scrollbar-width: thin; /* Установка толщины скролл бара */
+  scrollbar-color: #888 #f1f1f1; /* Установка цвета ползунка и трека */
+}
+
+.search {
+  margin-top: var(--inner-block-spacing);
+  padding: var(--inner-block-spacing) 2rem 0 2rem;
+}
+
+/* Для полной кроссбраузерности можно использовать @supports */
+@supports (scrollbar-width: thin) {
+  .rooms_container {
+    scrollbar-color: #f1f1f1 var(--primary-color);
+  }
+}

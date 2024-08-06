@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-content);
+  font-weight: var(--font-meduim);
+  margin-bottom: 0.5rem;
+  gap: var(--inner-text-spacing);
+}
