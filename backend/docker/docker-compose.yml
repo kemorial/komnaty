@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+ laravel_messenger:
+   container_name: laravel_messenger
+   build:
+     context: ./
+     dockerfile: Dockerfile
+   volumes:
+     - ../:/var/www
+   restart: always
+   ports:
+     - "8000:8888"
+   command: >
+     sh -c "
+     php /var/www/artisan migrate &&
+     php /var/www/artisan serve --host=0.0.0.0 --port=8888
+     "
+   depends_on:
+     - mysql_messenger
+   networks: ["stack"]
+
+ mysql_messenger:
+   image: mysql:5.7
+   container_name: mysql_messenger
+   environment:
+     - MYSQL_ROOT_PASSWORD=Vbnz
+     - MYSQL_DATABASE=messenger
+   volumes:
+     - ../storage/dbvolume:/var/lib/mysql
+   networks: ['stack']
+
+
+networks:
+  stack:
+    driver: bridge
