@@ -55,7 +55,7 @@ export default function ChatInput() {
         <FormItem errorClassName={styles.error} error={errors.message?.message}>
           <Input
             inputClassName={styles.input}
-            disabled={messageStore.isOptimisticInProgress}
+            // disabled={messageStore.isOptimisticInProgress}
             containerClassName={styles.input_container}
             iconAlign='right'
             size='md'
