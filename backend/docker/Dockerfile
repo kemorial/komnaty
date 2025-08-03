@@ -12,4 +12,6 @@ RUN install-php-extensions pdo pdo_mysql
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+RUN mkdir  ./framework ./framework/sessions
+
 WORKDIR /var/www
